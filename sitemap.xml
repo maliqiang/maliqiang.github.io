@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://maliqiang.github.io/2019/01/13/hello-world/</loc>
+    
+    <lastmod>2019-01-18T09:30:38.058Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://maliqiang.github.io/2019/01/18/golang/</loc>
     
     <lastmod>2019-01-18T09:28:35.196Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>https://maliqiang.github.io/2019/01/13/index/</loc>
     
     <lastmod>2019-01-18T09:18:39.161Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://maliqiang.github.io/2019/01/13/hello-world/</loc>
-    
-    <lastmod>2019-01-18T09:07:01.392Z</lastmod>
     
   </url>
   
