@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://maliqiang.github.io/"/>
-  <updated>2019-01-14T04:02:02.363Z</updated>
+  <updated>2019-01-18T09:20:31.615Z</updated>
   <id>https://maliqiang.github.io/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>tech</title>
+    <link href="https://maliqiang.github.io/2019/01/18/golang/"/>
+    <id>https://maliqiang.github.io/2019/01/18/golang/</id>
+    <published>2019-01-18T09:15:03.000Z</published>
+    <updated>2019-01-18T09:20:31.615Z</updated>
+    
+    <content type="html"><![CDATA[<p> <excerpt in="" index="" |="" 首页摘要=""><br><a id="more"></a></excerpt></p><the rest="" of="" contents="" |="" 余下全文=""></the>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt; &lt;excerpt in=&quot;&quot; index=&quot;&quot; |=&quot;&quot; 首页摘要=&quot;&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="tech" scheme="https://maliqiang.github.io/categories/tech/"/>
+    
+    
+      <category term="技术文章" scheme="https://maliqiang.github.io/tags/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>beego使用方法</title>
     <link href="https://maliqiang.github.io/2019/01/13/index/"/>
     <id>https://maliqiang.github.io/2019/01/13/index/</id>
     <published>2019-01-13T11:59:26.000Z</published>
-    <updated>2019-01-14T04:02:02.363Z</updated>
+    <updated>2019-01-18T09:18:39.161Z</updated>
     
     <content type="html"><![CDATA[<excerpt in="" index="" |="" 首页摘要=""><a id="more"></a><h2 id=""><a href="#" class="headerlink" title=""></a><the rest="" of="" contents="" |="" 余下全文=""></the></h2><h2 id="beego使用方法"><a href="#beego使用方法" class="headerlink" title="beego使用方法"></a>beego使用方法</h2><ol><li>常用命令</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">bee command [arguments]</span><br><span class="line"></span><br><span class="line">The commands are:</span><br><span class="line"></span><br><span class="line">    version     show the bee &amp; beego version</span><br><span class="line">    migrate     run database migrations</span><br><span class="line">    api         create an api application base on beego framework</span><br><span class="line">    bale        packs non-Go files to Go source files    </span><br><span class="line">    new         create an application base on beego framework</span><br><span class="line">    run         run the app which can hot compile</span><br><span class="line">    pack        compress an beego project</span><br><span class="line">    fix         Fixes your application by making it compatible with newer versions of Beego</span><br><span class="line">    dlv         Start a debugging session using Delve</span><br><span class="line">    dockerize   Generates a Dockerfile for your Beego application</span><br><span class="line">    generate    Source code generator</span><br><span class="line">    hprose      Creates an RPC application based on Hprose and Beego frameworks</span><br><span class="line">    new         Creates a Beego application</span><br><span class="line">    pack        Compresses a Beego application into a single file</span><br><span class="line">    rs          Run customized scripts</span><br><span class="line">    run         Run the application by starting a local development server</span><br><span class="line">    server      serving static content over HTTP on port</span><br><span class="line">    </span><br><span class="line">Use bee help [command] for more information about a command.</span><br></pre></td></tr></table></figure><ol start="2"><li>创建项目</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bee new projectName</span><br></pre></td></tr></table></figure><ol start="3"><li>项目结构</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">│  hello-web.exe 【运行后生产的二进制执行文件】</span><br><span class="line">│  main.go 【入口文件】</span><br><span class="line">├─conf</span><br><span class="line">│------app.conf 【项目配置文件：包含项目名、端口、运行模式】</span><br><span class="line">├─controllers 【controller目录】</span><br><span class="line">│      default.go</span><br><span class="line">├─models 【功能抽取目录】</span><br><span class="line">├─routers</span><br><span class="line">│      router.go 【路由配置文件】</span><br><span class="line">├─static  【静态资源文件】</span><br><span class="line">│  ├─css</span><br><span class="line">│  ├─img</span><br><span class="line">│  └─js</span><br><span class="line">│-------reload.min.js</span><br><span class="line">├─tests</span><br><span class="line">│-------default_test.go 【单元测试文件】</span><br><span class="line">│      </span><br><span class="line">└─views  【模板目录】</span><br><span class="line">--------index.tpl</span><br></pre></td></tr></table></figure><ol start="4"><li>页面路由设置</li></ol><blockquote><p>1 url配置方式</p></blockquote><p>暂无，参考官方文档</p><blockquote><p>2 注解方式</p></blockquote><p>Controller覆写URLMapping方法，将对应的方法添加到Mapping，如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">func (this *HomeController) URLMapping()&#123;</span><br><span class="line">this.Mapping(&quot;Home&quot;,this.Home)</span><br><span class="line">this.Mapping(&quot;Welcome&quot;,this.Welcome)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>在方法上添加路由注解（有点像注释），具体如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">// @router /home/ [get] 无参数，访问路径为：ip:port/home</span><br><span class="line"></span><br><span class="line">// @router /home/:key [get] 带参数，访问路径为：ip:port/home/sss</span><br></pre></td></tr></table></figure></p><p>在路由配置文件，加入如下配置：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//注解路由</span><br><span class="line">beego.Include(&amp;controllers.HomeController&#123;&#125;)</span><br></pre></td></tr></table></figure></p><p>5、 mvc架构</p><p><a href="&quot;https://beego.me/docs/images/detail.png&quot;">mvc架构图</a></p><p>6、 配置文件选项</p><p><a href="https://godoc.org/github.com/astaxie/beego#pkg-constants" target="_blank" rel="noopener">https://godoc.org/github.com/astaxie/beego#pkg-constants</a></p></excerpt>]]></content>
     
@@ -47,18 +69,13 @@
     <link href="https://maliqiang.github.io/2019/01/13/hello-world/"/>
     <id>https://maliqiang.github.io/2019/01/13/hello-world/</id>
     <published>2019-01-13T11:15:37.000Z</published>
-    <updated>2019-01-14T03:38:21.489Z</updated>
+    <updated>2019-01-18T09:07:01.392Z</updated>
     
-    <content type="html"><![CDATA[<hr><p>这是一个测试文章！</p>]]></content>
+    <content type="html"><![CDATA[<excerpt in="" index="" |="" 首页摘要=""><a id="more"></a><h2 id=""><a href="#" class="headerlink" title=""></a><the rest="" of="" contents="" |="" 余下全文=""></the></h2><p>这是一个测试文章！</p></excerpt>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;hr&gt;
-&lt;p&gt;这是一个测试文章！&lt;/p&gt;
-
-      
+      &lt;excerpt in=&quot;&quot; index=&quot;&quot; |=&quot;&quot; 首页摘要=&quot;&quot;&gt;
     
     </summary>
     
