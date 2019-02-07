@@ -12,12 +12,14 @@
   <meta name="keywords" content="技术文章">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Docker常用命令">
-<meta property="og:url" content="https://maliqiang.github.io/2019/01/18/golang/index.html">
+<meta property="og:url" content="https://maliqiang.github.io/2019/01/18/docker/index.html">
 <meta property="og:site_name" content="思远的博客">
 <meta property="og:locale" content="zh">
-<meta property="og:updated_time" content="2019-01-18T09:28:35.196Z">
+<meta property="og:image" content="https://maliqiang.github.io/images/docker_logo.jpg">
+<meta property="og:updated_time" content="2019-02-07T02:11:32.063Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Docker常用命令">
+<meta name="twitter:image" content="https://maliqiang.github.io/images/docker_logo.jpg">
   
     <link rel="alternative" href="/atom.xml" title="思远的博客" type="application/atom+xml">
   
@@ -168,7 +170,7 @@
                         
                             <li><a href="/archives/">所有文章</a></li>
                         
-                            <li><a href="/categories/开发工具/">玩转开发工具</a></li>
+                            <li><a href="/coding/">程序人生</a></li>
                         
                             <li><a href="/about/">关于我</a></li>
                         
@@ -177,7 +179,7 @@
                     <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fl github" target="_blank" href="/xxxxx" title="github">github</a>
+                                <a class="fl github" target="_blank" href="/readme.md" title="github">github</a>
                             
                                 <a class="fl weibo" target="_blank" href="/xxxxxxxx" title="weibo">weibo</a>
                             
@@ -197,11 +199,7 @@
                 <section class="switch-part switch-part3">
                     <div id="js-friends">
                     
-                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://blog.csdn.net/baidu_21483933">csdn</a>
-                    
-                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://segmentfault.com/blog/maocg_web">segmentfault</a>
-                    
-                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.jianshu.com/users/eb37ef89c746/latest_articles">简书</a>
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://blog.csdn.net">csdn</a>
                     
                     </div>
                 </section>
@@ -210,7 +208,7 @@
                 
                 <section class="switch-part switch-part4">
                 
-                    <div id="js-aboutme">爱动漫,爱游戏,爱编程,爱运动,爱的太多了!</div>
+                    <div id="js-aboutme">爱游戏,爱编程,爱运动,爱的太多了!</div>
                 </section>
                 
             </div>
@@ -241,7 +239,7 @@
                 
                     <li><a href="/archives/">所有文章</a></li>
                 
-                    <li><a href="/categories/开发工具/">玩转开发工具</a></li>
+                    <li><a href="/coding/">程序人生</a></li>
                 
                     <li><a href="/about/">关于我</a></li>
                 
@@ -251,7 +249,7 @@
             <nav class="header-nav">
                 <div class="social">
                     
-                        <a class="github" target="_blank" href="/xxxxx" title="github">github</a>
+                        <a class="github" target="_blank" href="/readme.md" title="github">github</a>
                     
                         <a class="weibo" target="_blank" href="/xxxxxxxx" title="weibo">weibo</a>
                     
@@ -262,10 +260,10 @@
         </header>
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-golang" class="article article-type-post" itemscope="" itemprop="blogPost">
+      <div class="body-wrap"><article id="post-docker" class="article article-type-post" itemscope="" itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2019/01/18/golang/" class="article-date">
+      <a href="/2019/01/18/docker/" class="article-date">
       <time datetime="2019-01-18T09:15:03.000Z" itemprop="datePublished">2019-01-18</time>
 </a>
 
@@ -306,12 +304,17 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p> <excerpt in="" index="" |="" 首页摘要=""><br><a id="more"></a></excerpt></p>
+         <excerpt in="" index="" |="" 首页摘要="">
+
+<a id="more"></a>
 <the rest="" of="" contents="" |="" 余下全文="">
 
+<p><img src="/images/docker_logo.jpg" alt="docker"></p>
 <h2 id="Docker常用命令"><a href="#Docker常用命令" class="headerlink" title="Docker常用命令"></a>Docker常用命令</h2><ol>
-<li><p>一个docker镜像包含多个容器<br>面向对象说法：镜像（类）–&gt;容器(对象)</p>
-</li>
+<li>一个docker镜像包含多个容器</li>
+</ol>
+<p>面向对象说法：镜像（类）–&gt;容器(对象)</p>
+<ol start="2">
 <li><p>查看docker已下载镜像</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker images</span><br></pre></td></tr></table></figure>
 </li>
@@ -339,7 +342,7 @@
 <li><p>进入容器</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker exec -it 容器id /bin/bash</span><br></pre></td></tr></table></figure></li>
 </ol>
-</the>
+</the></excerpt>
       
     </div>
     
@@ -347,13 +350,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2019/01/18/golang/">Docker常用命令</a></p>
+        <p><span>本文标题:</span><a href="/2019/01/18/docker/">Docker常用命令</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 siyuan 的个人博客">siyuan</a></p>
         <p><span>发布时间:</span>2019年01月18日 - 17时15分</p>
-        <p><span>最后更新:</span>2019年01月18日 - 17时28分</p>
+        <p><span>最后更新:</span>2019年02月07日 - 10时11分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2019/01/18/golang/" title="Docker常用命令">https://maliqiang.github.io/2019/01/18/golang/</a> 转载请保留原文链接及作者。
-            <span class="copy-path" data-clipboard-text="原文: https://maliqiang.github.io/2019/01/18/golang/　　作者: siyuan" title=""></span>
+            <span>原始链接:</span><a class="post-url" href="/2019/01/18/docker/" title="Docker常用命令">https://maliqiang.github.io/2019/01/18/docker/</a> 转载请保留原文链接及作者。
+            <span class="copy-path" data-clipboard-text="原文: https://maliqiang.github.io/2019/01/18/docker/　　作者: siyuan" title=""></span>
         </p>
     </div>
 
@@ -362,7 +365,7 @@
 <nav id="article-nav">
   
   
-    <a href="/2019/01/13/index/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2019/01/13/beego/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">beego使用方法</div>
       <strong class="article-nav-caption">></strong>
     </a>
@@ -416,18 +419,6 @@
 
 
 
-<div class="bdsharebuttonbox">
-	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
-	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
-	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
-	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
-	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
-</div>
-<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-
-
 
 
     
@@ -452,12 +443,12 @@
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/2019/01/13/index/" title="下一篇: beego使用方法">
+            <a href="/2019/01/13/beego/" title="下一篇: beego使用方法">
                 <i class="fa fa-angle-right"></i>
             </a>
         
     </div>
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/01/18/golang/">Docker常用命令</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/01/13/index/">beego使用方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/01/13/hello-world/">上线说明</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/01/18/docker/">Docker常用命令</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/01/13/beego/">beego使用方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/01/13/hello-world/">上线说明</a></li></ul>
     
 <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
 

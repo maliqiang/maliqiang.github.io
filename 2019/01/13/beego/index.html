@@ -12,10 +12,10 @@
   <meta name="keywords" content="golang,beego,web框架">
 <meta property="og:type" content="article">
 <meta property="og:title" content="beego使用方法">
-<meta property="og:url" content="https://maliqiang.github.io/2019/01/13/index/index.html">
+<meta property="og:url" content="https://maliqiang.github.io/2019/01/13/beego/index.html">
 <meta property="og:site_name" content="思远的博客">
 <meta property="og:locale" content="zh">
-<meta property="og:updated_time" content="2019-01-18T09:18:39.161Z">
+<meta property="og:updated_time" content="2019-01-25T01:53:16.707Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="beego使用方法">
   
@@ -168,7 +168,7 @@
                         
                             <li><a href="/archives/">所有文章</a></li>
                         
-                            <li><a href="/categories/开发工具/">玩转开发工具</a></li>
+                            <li><a href="/coding/">程序人生</a></li>
                         
                             <li><a href="/about/">关于我</a></li>
                         
@@ -177,7 +177,7 @@
                     <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fl github" target="_blank" href="/xxxxx" title="github">github</a>
+                                <a class="fl github" target="_blank" href="/readme.md" title="github">github</a>
                             
                                 <a class="fl weibo" target="_blank" href="/xxxxxxxx" title="weibo">weibo</a>
                             
@@ -197,11 +197,7 @@
                 <section class="switch-part switch-part3">
                     <div id="js-friends">
                     
-                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://blog.csdn.net/baidu_21483933">csdn</a>
-                    
-                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://segmentfault.com/blog/maocg_web">segmentfault</a>
-                    
-                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.jianshu.com/users/eb37ef89c746/latest_articles">简书</a>
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://blog.csdn.net">csdn</a>
                     
                     </div>
                 </section>
@@ -210,7 +206,7 @@
                 
                 <section class="switch-part switch-part4">
                 
-                    <div id="js-aboutme">爱动漫,爱游戏,爱编程,爱运动,爱的太多了!</div>
+                    <div id="js-aboutme">爱游戏,爱编程,爱运动,爱的太多了!</div>
                 </section>
                 
             </div>
@@ -241,7 +237,7 @@
                 
                     <li><a href="/archives/">所有文章</a></li>
                 
-                    <li><a href="/categories/开发工具/">玩转开发工具</a></li>
+                    <li><a href="/coding/">程序人生</a></li>
                 
                     <li><a href="/about/">关于我</a></li>
                 
@@ -251,7 +247,7 @@
             <nav class="header-nav">
                 <div class="social">
                     
-                        <a class="github" target="_blank" href="/xxxxx" title="github">github</a>
+                        <a class="github" target="_blank" href="/readme.md" title="github">github</a>
                     
                         <a class="weibo" target="_blank" href="/xxxxxxxx" title="weibo">weibo</a>
                     
@@ -262,10 +258,10 @@
         </header>
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-index" class="article article-type-post" itemscope="" itemprop="blogPost">
+      <div class="body-wrap"><article id="post-beego" class="article article-type-post" itemscope="" itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2019/01/13/index/" class="article-date">
+      <a href="/2019/01/13/beego/" class="article-date">
       <time datetime="2019-01-13T11:59:26.000Z" itemprop="datePublished">2019-01-13</time>
 </a>
 
@@ -309,7 +305,9 @@
         <excerpt in="" index="" |="" 首页摘要="">
 
 <a id="more"></a>
-<h2 id=""><a href="#" class="headerlink" title=""></a><the rest="" of="" contents="" |="" 余下全文=""></the></h2><h2 id="beego使用方法"><a href="#beego使用方法" class="headerlink" title="beego使用方法"></a>beego使用方法</h2><ol>
+<the rest="" of="" contents="" |="" 余下全文="">
+
+<h2 id="beego使用方法"><a href="#beego使用方法" class="headerlink" title="beego使用方法"></a>beego使用方法</h2><ol>
 <li>常用命令</li>
 </ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">bee command [arguments]</span><br><span class="line"></span><br><span class="line">The commands are:</span><br><span class="line"></span><br><span class="line">    version     show the bee &amp; beego version</span><br><span class="line">    migrate     run database migrations</span><br><span class="line">    api         create an api application base on beego framework</span><br><span class="line">    bale        packs non-Go files to Go source files    </span><br><span class="line">    new         create an application base on beego framework</span><br><span class="line">    run         run the app which can hot compile</span><br><span class="line">    pack        compress an beego project</span><br><span class="line">    fix         Fixes your application by making it compatible with newer versions of Beego</span><br><span class="line">    dlv         Start a debugging session using Delve</span><br><span class="line">    dockerize   Generates a Dockerfile for your Beego application</span><br><span class="line">    generate    Source code generator</span><br><span class="line">    hprose      Creates an RPC application based on Hprose and Beego frameworks</span><br><span class="line">    new         Creates a Beego application</span><br><span class="line">    pack        Compresses a Beego application into a single file</span><br><span class="line">    rs          Run customized scripts</span><br><span class="line">    run         Run the application by starting a local development server</span><br><span class="line">    server      serving static content over HTTP on port</span><br><span class="line">    </span><br><span class="line">Use bee help [command] for more information about a command.</span><br></pre></td></tr></table></figure>
@@ -338,7 +336,7 @@
 <p><a href="&quot;https://beego.me/docs/images/detail.png&quot;">mvc架构图</a></p>
 <p>6、 配置文件选项</p>
 <p><a href="https://godoc.org/github.com/astaxie/beego#pkg-constants" target="_blank" rel="noopener">https://godoc.org/github.com/astaxie/beego#pkg-constants</a></p>
-</excerpt>
+</the></excerpt>
       
     </div>
     
@@ -346,13 +344,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2019/01/13/index/">beego使用方法</a></p>
+        <p><span>本文标题:</span><a href="/2019/01/13/beego/">beego使用方法</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 siyuan 的个人博客">siyuan</a></p>
         <p><span>发布时间:</span>2019年01月13日 - 19时59分</p>
-        <p><span>最后更新:</span>2019年01月18日 - 17时18分</p>
+        <p><span>最后更新:</span>2019年01月25日 - 09时53分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2019/01/13/index/" title="beego使用方法">https://maliqiang.github.io/2019/01/13/index/</a> 转载请保留原文链接及作者。
-            <span class="copy-path" data-clipboard-text="原文: https://maliqiang.github.io/2019/01/13/index/　　作者: siyuan" title=""></span>
+            <span>原始链接:</span><a class="post-url" href="/2019/01/13/beego/" title="beego使用方法">https://maliqiang.github.io/2019/01/13/beego/</a> 转载请保留原文链接及作者。
+            <span class="copy-path" data-clipboard-text="原文: https://maliqiang.github.io/2019/01/13/beego/　　作者: siyuan" title=""></span>
         </p>
     </div>
 
@@ -360,7 +358,7 @@
 
 <nav id="article-nav">
   
-    <a href="/2019/01/18/golang/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/01/18/docker/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
@@ -383,7 +381,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.</span> <span class="toc-text"></span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#beego使用方法"><span class="toc-number">2.</span> <span class="toc-text">beego使用方法</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#beego使用方法"><span class="toc-number">1.</span> <span class="toc-text">beego使用方法</span></a></li></ol>
 </div>
 <style>
     .left-col .switch-btn {
@@ -424,18 +422,6 @@
 
 
 
-<div class="bdsharebuttonbox">
-	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
-	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
-	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
-	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
-	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
-</div>
-<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-
-
 
 
     
@@ -456,7 +442,7 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2019/01/18/golang/" title="上一篇: Docker常用命令">
+            <a href="/2019/01/18/docker/" title="上一篇: Docker常用命令">
                 <i class="fa fa-angle-left"></i>
             </a>
         
@@ -467,7 +453,7 @@
             </a>
         
     </div>
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/01/18/golang/">Docker常用命令</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/01/13/index/">beego使用方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/01/13/hello-world/">上线说明</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/01/18/docker/">Docker常用命令</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/01/13/beego/">beego使用方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/01/13/hello-world/">上线说明</a></li></ul>
     
 <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
 
