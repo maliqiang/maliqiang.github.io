@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://maliqiang.github.io/coding/index.html</loc>
+    
+    <lastmod>2019-02-07T02:29:44.989Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://maliqiang.github.io/coding/index/index.html</loc>
+    
+    <lastmod>2019-02-07T02:28:41.494Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://maliqiang.github.io/2019/01/18/docker/</loc>
     
     <lastmod>2019-02-07T02:11:32.063Z</lastmod>
@@ -19,27 +33,6 @@
     <loc>https://maliqiang.github.io/2019/01/13/beego/</loc>
     
     <lastmod>2019-01-25T01:53:16.707Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://maliqiang.github.io/coding/index.2.html</loc>
-    
-    <lastmod>2019-01-18T10:08:29.814Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://maliqiang.github.io/coding/index.1.html</loc>
-    
-    <lastmod>2019-01-18T10:08:24.373Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://maliqiang.github.io/coding/index.html</loc>
-    
-    <lastmod>2019-01-18T10:07:58.714Z</lastmod>
     
   </url>
   
