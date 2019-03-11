@@ -7,17 +7,16 @@
   
   
   
-  <title>beego使用方法 | 思远的博客</title>
+  <title>Archives: 2019/2 | 思远的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="golang,beego,web框架">
-<meta property="og:type" content="article">
-<meta property="og:title" content="beego使用方法">
-<meta property="og:url" content="https://maliqiang.github.io/2019/01/13/beego/index.html">
+  <meta name="keywords" content="思远">
+<meta property="og:type" content="website">
+<meta property="og:title" content="思远的博客">
+<meta property="og:url" content="https://maliqiang.github.io/archives/2019/02/index.html">
 <meta property="og:site_name" content="思远的博客">
 <meta property="og:locale" content="zh">
-<meta property="og:updated_time" content="2019-01-25T01:53:16.707Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="beego使用方法">
+<meta name="twitter:title" content="思远的博客">
   
     <link rel="alternative" href="/atom.xml" title="思远的博客" type="application/atom+xml">
   
@@ -42,8 +41,8 @@
           fancybox: true,
           animate: true,
           isHome: false,
-          isPost: true,
-          isArchive: false,
+          isPost: false,
+          isArchive: true,
           isTag: false,
           isCategory: false,
           open_in_new: false
@@ -262,231 +261,60 @@
         </header>
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-beego" class="article article-type-post" itemscope="" itemprop="blogPost">
+      <div class="body-wrap">
   
-    <div class="article-meta">
-      <a href="/2019/01/13/beego/" class="article-date">
-      <time datetime="2019-01-13T11:59:26.000Z" itemprop="datePublished">2019-01-13</time>
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2019" class="archive-year">2019</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+          <div class="article-meta">
+              <a href="/2019/02/26/datax/" class="archive-article-date">
+      <time datetime="2019-02-26T10:09:00.000Z" itemprop="datePublished">02-26</time>
 </a>
 
-    </div>
+        </div>
+         
   
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      beego使用方法
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2019/02/26/datax/">datax使用简介</a>
     </h1>
   
 
 
-      </header>
-      
-      <div class="article-info article-info-post">
-        
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/技术/">技术</a>
-    </div>
-
-
-        
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/beego/">beego</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/golang/">golang</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web框架/">web框架</a></li></ul>
-    </div>
-
-        <div class="clearfix"></div>
-      </div>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
+        <div class="article-info info-on-archive">
           
-        <excerpt in="" index="" |="" 首页摘要="">
-
-<a id="more"></a>
-<the rest="" of="" contents="" |="" 余下全文="">
-
-<h2 id="beego使用方法"><a href="#beego使用方法" class="headerlink" title="beego使用方法"></a>beego使用方法</h2><ol>
-<li>常用命令</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">bee command [arguments]</span><br><span class="line"></span><br><span class="line">The commands are:</span><br><span class="line"></span><br><span class="line">    version     show the bee &amp; beego version</span><br><span class="line">    migrate     run database migrations</span><br><span class="line">    api         create an api application base on beego framework</span><br><span class="line">    bale        packs non-Go files to Go source files    </span><br><span class="line">    new         create an application base on beego framework</span><br><span class="line">    run         run the app which can hot compile</span><br><span class="line">    pack        compress an beego project</span><br><span class="line">    fix         Fixes your application by making it compatible with newer versions of Beego</span><br><span class="line">    dlv         Start a debugging session using Delve</span><br><span class="line">    dockerize   Generates a Dockerfile for your Beego application</span><br><span class="line">    generate    Source code generator</span><br><span class="line">    hprose      Creates an RPC application based on Hprose and Beego frameworks</span><br><span class="line">    new         Creates a Beego application</span><br><span class="line">    pack        Compresses a Beego application into a single file</span><br><span class="line">    rs          Run customized scripts</span><br><span class="line">    run         Run the application by starting a local development server</span><br><span class="line">    server      serving static content over HTTP on port</span><br><span class="line">    </span><br><span class="line">Use bee help [command] for more information about a command.</span><br></pre></td></tr></table></figure>
-<ol start="2">
-<li>创建项目</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bee new projectName</span><br></pre></td></tr></table></figure>
-<ol start="3">
-<li>项目结构</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">│  hello-web.exe 【运行后生产的二进制执行文件】</span><br><span class="line">│  main.go 【入口文件】</span><br><span class="line">├─conf</span><br><span class="line">│------app.conf 【项目配置文件：包含项目名、端口、运行模式】</span><br><span class="line">├─controllers 【controller目录】</span><br><span class="line">│      default.go</span><br><span class="line">├─models 【功能抽取目录】</span><br><span class="line">├─routers</span><br><span class="line">│      router.go 【路由配置文件】</span><br><span class="line">├─static  【静态资源文件】</span><br><span class="line">│  ├─css</span><br><span class="line">│  ├─img</span><br><span class="line">│  └─js</span><br><span class="line">│-------reload.min.js</span><br><span class="line">├─tests</span><br><span class="line">│-------default_test.go 【单元测试文件】</span><br><span class="line">│      </span><br><span class="line">└─views  【模板目录】</span><br><span class="line">--------index.tpl</span><br></pre></td></tr></table></figure>
-<ol start="4">
-<li>页面路由设置</li>
-</ol>
-<blockquote>
-<p>1 url配置方式</p>
-</blockquote>
-<p>暂无，参考官方文档</p>
-<blockquote>
-<p>2 注解方式</p>
-</blockquote>
-<p>Controller覆写URLMapping方法，将对应的方法添加到Mapping，如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">func (this *HomeController) URLMapping()&#123;</span><br><span class="line">	this.Mapping(&quot;Home&quot;,this.Home)</span><br><span class="line">	this.Mapping(&quot;Welcome&quot;,this.Welcome)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>在方法上添加路由注解（有点像注释），具体如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">// @router /home/ [get] 无参数，访问路径为：ip:port/home</span><br><span class="line"></span><br><span class="line">// @router /home/:key [get] 带参数，访问路径为：ip:port/home/sss</span><br></pre></td></tr></table></figure></p>
-<p>在路由配置文件，加入如下配置：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//注解路由</span><br><span class="line">beego.Include(&amp;controllers.HomeController&#123;&#125;)</span><br></pre></td></tr></table></figure></p>
-<p>5、 mvc架构</p>
-<p><a href="&quot;https://beego.me/docs/images/detail.png&quot;">mvc架构图</a></p>
-<p>6、 配置文件选项</p>
-<p><a href="https://godoc.org/github.com/astaxie/beego#pkg-constants" target="_blank" rel="noopener">https://godoc.org/github.com/astaxie/beego#pkg-constants</a></p>
-</the></excerpt>
-      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/tech/">tech</a>
     </div>
-    
+
+
+          
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/技术文章/">技术文章</a></li></ul>
+    </div>
+
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
-  
-    
-    <div class="copyright">
-        <p><span>本文标题:</span><a href="/2019/01/13/beego/">beego使用方法</a></p>
-        <p><span>文章作者:</span><a href="/" title="访问 思远 的个人博客">思远</a></p>
-        <p><span>发布时间:</span>2019年01月13日 - 19时59分</p>
-        <p><span>最后更新:</span>2019年01月25日 - 09时53分</p>
-        <p>
-            <span>原始链接:</span><a class="post-url" href="/2019/01/13/beego/" title="beego使用方法">https://maliqiang.github.io/2019/01/13/beego/</a> 转载请保留原文链接及作者。
-            <span class="copy-path" data-clipboard-text="原文: https://maliqiang.github.io/2019/01/13/beego/　　作者: 思远" title=""></span>
-        </p>
-    </div>
-
-
-
-<nav id="article-nav">
-  
-    <a href="/2019/01/18/docker/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          Docker常用命令
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2019/01/13/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">上线说明</div>
-      <strong class="article-nav-caption">></strong>
-    </a>
-  
-</nav>
-
-
-  
 </article>
-
-    <div id="toc" class="toc-article">
-    <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#beego使用方法"><span class="toc-number">1.</span> <span class="toc-text">beego使用方法</span></a></li></ol>
-</div>
-<style>
-    .left-col .switch-btn {
-        display: none;
-    }
-    .left-col .switch-area {
-        display: none;
-    }
-</style>
-<input type="button" id="tocButton" value="隐藏目录" title="点击按钮隐藏或者显示文章目录">
-
-<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
-
-<script>
-    var valueHide = "隐藏目录";
-    var valueShow = "显示目录";
-    if ($(".left-col").is(":hidden")) {
-        $("#tocButton").attr("value", valueShow);
-    }
-    $("#tocButton").click(function() {
-        if ($("#toc").is(":hidden")) {
-            $("#tocButton").attr("value", valueHide);
-            $("#toc").slideDown(320);
-            $(".switch-btn, .switch-area").fadeOut(300);
-        }
-        else {
-            $("#tocButton").attr("value", valueShow);
-            $("#toc").slideUp(350);
-            $(".switch-btn, .switch-area").fadeIn(500);
-        }
-    })
-    if ($(".toc").length < 1) {
-        $("#toc, #tocButton").hide();
-        $(".switch-btn, .switch-area").show();
-    }
-</script>
-
-
-
-
-
+  
+  
+    </div></section>
+  
 
     
-        <section class="changyan" id="comments">
-  <!--<div id="uyan_frame"></div>-->
-  <div id="SOHUCS"></div>
-  <script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js"></script>
-  <script type="text/javascript">
-    window.changyan.api.config({
-      appid: 'xxxx',
-      conf: 'xxxxxxxxx'
-    });
-  </script>
-</section>
-    
 
-
-
-    <div class="scroll" id="post-nav-button">
-        
-            <a href="/2019/01/18/docker/" title="上一篇: Docker常用命令">
-                <i class="fa fa-angle-left"></i>
-            </a>
-        
-        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
-        
-            <a href="/2019/01/13/hello-world/" title="下一篇: 上线说明">
-                <i class="fa fa-angle-right"></i>
-            </a>
-        
-    </div>
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/02/26/datax/">datax使用简介</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/01/18/docker/">Docker常用命令</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/01/13/beego/">beego使用方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/01/13/hello-world/">上线说明</a></li></ul>
-    
-<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
-
-    <script>
-        $(".post-list").addClass("toc-article");
-        // $(".post-list-item a").attr("target","_blank");
-        $("#post-nav-button > a:nth-child(2)").click(function() {
-            $(".fa-bars, .fa-times").toggle();
-            $(".post-list").toggle(300);
-            if ($(".toc").length > 0) {
-                $("#toc, #tocButton").toggle(200, function() {
-                    if ($(".switch-area").is(":visible")) {
-                        $("#toc, .switch-btn, .switch-area").toggle();
-                        $("#tocButton").attr("value", valueHide);
-                        }
-                    })
-            }
-            else {
-                $(".switch-btn, .switch-area").fadeToggle(300);
-            }
-        })
-    </script>
-
-
-
-
-    <script>
-        
-    </script>
 
 </div>
       <footer id="footer">
@@ -578,6 +406,18 @@ ga('send', 'pageview');
         };
     })
 </script>
+
+    <button class="hide-labels">TAG 开关</button>
+    
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $(".article-info").toggle(200);
+            });
+        });
+    </script>
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
