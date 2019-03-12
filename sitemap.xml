@@ -2,23 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://maliqiang.github.io/2019/02/26/datax/</loc>
+    <loc>https://maliqiang.github.io/about/index.html</loc>
     
-    <lastmod>2019-03-11T09:53:18.084Z</lastmod>
+    <lastmod>2019-03-12T05:40:17.513Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://maliqiang.github.io/2019/03/12/rools%E5%9C%A8%E9%A1%B9%E7%9B%AE%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/</loc>
+    
+    <lastmod>2019-03-12T05:35:33.042Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://maliqiang.github.io/coding/index.html</loc>
     
-    <lastmod>2019-02-07T02:29:44.989Z</lastmod>
+    <lastmod>2019-03-12T05:15:21.271Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://maliqiang.github.io/coding/index/index.html</loc>
+    <loc>https://maliqiang.github.io/2019/02/26/datax/</loc>
     
-    <lastmod>2019-02-07T02:28:41.494Z</lastmod>
+    <lastmod>2019-03-11T09:53:18.084Z</lastmod>
     
   </url>
   
@@ -47,13 +54,6 @@
     <loc>https://maliqiang.github.io/tech/index.html</loc>
     
     <lastmod>2019-01-18T09:19:28.615Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://maliqiang.github.io/about/index.html</loc>
-    
-    <lastmod>2019-01-14T05:03:14.785Z</lastmod>
     
   </url>
   
